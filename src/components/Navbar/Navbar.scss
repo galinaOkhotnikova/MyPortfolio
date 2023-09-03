@@ -1,0 +1,110 @@
+@mixin li_violet {
+    cursor: pointer;
+    transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
+    &:hover {
+        color: var(--color-accent-purple);
+        border-bottom: 1px solid var(--color-accent-purple);
+    }
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-darkgrey);
+    color: var(--color-white);
+
+    &__logo {
+        margin-left: 4rem;
+        font-family: var(--font-logo);
+        font-size: 24px;
+        
+        display: flex;
+        align-items: center;
+    }
+
+    &__links {
+        font-family: var(--font-base);
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        align-items: center;
+
+        list-style: none;
+        li {
+            margin-right: 4rem;
+            @include li_violet; 
+        }
+    }
+
+    &__smallscreen {
+        display: none;
+        font-size: 27px;
+        font-family: var(--font-base);
+
+        &_overlay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--color-darkgrey);
+        
+            flex-direction: column;
+            z-index: 5;
+
+            &-list {
+                list-style: none;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                li {
+                    @include li_violet;
+                    padding-top: 2rem;
+                }
+            }
+        }
+
+        .overlay__close {
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 2000px) {
+
+}
+
+@media screen and (max-width: 1150px) {
+    .navbar__links {
+        display: none;
+    }
+
+    .navbar__smallscreen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 4rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar {
+        &__logo {
+            margin-left: 2rem;
+        }
+
+        &__smallscreen {
+            margin-right: 2rem;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&family=Hammersmith+One&display=swap');
+
+:root {
+    --font-base: 'Amiko', sans-serif;
+    --font-logo: 'Hammersmith One', sans-serif;
+
+    --color-darkgrey: #2B2A2A;
+    --color-accent-purple: #CB54E9;
+    --color-background: #333333;
+    --color-white: #FFFFFF;
+
+    --gradient-background: linear-gradient(135deg, #32043D 0%, #1E1620 99.79%);
+    --gradient-button: linear-gradient(270deg, #743087 0%, #BF7DD0 100%);
+}
+
+
+.btn {
+    font-family: var(--font-base);
+    border-radius: 7px;
+    background: var(--buttom, linear-gradient(270deg, #743087 0%, #BF7DD0 100%));
+    color: var(--color-white);
+    padding: 20px 40px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+.divider {
+    height: 1px;
+    width: 785px;
+    background: var(--color-white);
+    margin: 10px auto;
+}
+.header {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 1150px) {
+    .divider {
+        width: 630px;
+    }
+
+    .btn {
+        button {
+            font-size: 18px;
+            padding: 16px 35px;
+        }       
+    }
+
+    .header {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .divider {
+        width: 335px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 14px 30px;
+    }
+
+    .header {
+        font-size: 40px;
+    }
+}
