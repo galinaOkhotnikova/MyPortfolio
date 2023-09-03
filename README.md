@@ -3,6 +3,7 @@
 1. run npm i && npm run dev
 
 <hr />
+
 ### This is a website with my portfolio where you can view information about me, my projects, and contacts.
 
 ## Stack: React, Vite, Sass
