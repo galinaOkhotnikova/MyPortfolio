@@ -7,6 +7,12 @@
     }
 }
 
+.link {
+    color: white;
+    @include li_violet;
+
+}
+
 .navbar {
     height: 60px;
     width: 100%;
@@ -34,7 +40,6 @@
         list-style: none;
         li {
             margin-right: 4rem;
-            @include li_violet; 
         }
     }
 

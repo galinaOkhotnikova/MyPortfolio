@@ -1,23 +1,22 @@
 import React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 
-import Navbar from './components/Navbar/Navbar';
-import Landing from './components/Landing/Landing';
-import About from './components/About/About';
-import Skills from './components/Skills/Skills';
-import Footer from './components/Footer/Footer';
+
+import Layout from './components/Layout/Layout';
+import Homepage from './components/Homepage/Homepage';
 import Contacts from './components/Contacts/Contacts';
 
 import './App.scss'
 
 const App = () => (
-    <div>
-        <Navbar />
-        <Landing />
-        <About />
-        <Skills />
-        <Footer />
-        {/* <Contacts /> */}
-    </div>
+    <>
+        <Routes>
+            <Route path='/' element={ <Layout /> }>
+                <Route index element={ <Homepage /> }></Route>
+                <Route path='/contacts' element={ <Contacts /> }></Route>
+            </Route>
+        </Routes>
+    </>
 );
 
 export default App;

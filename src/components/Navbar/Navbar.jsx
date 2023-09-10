@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {RiCloseFill} from 'react-icons/ri';
 
@@ -15,19 +16,19 @@ const Navbar = () => {
             </div>
             <div className="navbar__links">
                 <li>
-                    <a>
+                    <Link to='/' className="link">
                         Home
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a>
+                    <Link to='/projects' className="link">
                         Projects
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#contacts">
+                    <Link to="/contacts" className="link">
                         Contacts
-                    </a>
+                    </Link>
                 </li>
             </div>
             <div className="navbar__smallscreen">
