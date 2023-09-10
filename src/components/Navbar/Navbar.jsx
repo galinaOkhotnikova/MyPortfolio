@@ -39,19 +39,19 @@ const Navbar = () => {
                             <RiCloseFill color="#fff"  className="overlay__close" fontSize={27} cursor="pointer" onClick={() => setToggleMenu(false)} />
                             <ul className="navbar__smallscreen_overlay-list">
                                 <li>
-                                    <a>
+                                    <Link to='/' className='link'>
                                         Home
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a>
+                                    <Link t0='/projects' className='link'>
                                         Projects
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a>
+                                    <Link to='/contact' className='link'>
                                         Contacts
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
