@@ -25,7 +25,7 @@ const Navbar = () => {
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="#contacts">
                         Contacts
                     </a>
                 </li>

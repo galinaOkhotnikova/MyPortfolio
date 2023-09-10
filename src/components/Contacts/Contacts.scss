@@ -1,0 +1,58 @@
+.contacts {
+    background: var(--gradient-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: var(--font-base);
+    text-align: center;
+
+    &__list {
+        margin-top: 50px;
+    }
+
+    h3 {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        color: var(--color-accent-purple);
+    }
+    
+    p {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        margin: 30px 0 50px 0;
+    }
+    
+    a {
+        color: white;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contacts {
+        h3 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contacts {
+        h3 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}

@@ -5,6 +5,7 @@ import Landing from './components/Landing/Landing';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Footer from './components/Footer/Footer';
+import Contacts from './components/Contacts/Contacts';
 
 import './App.scss'
 
@@ -15,6 +16,7 @@ const App = () => (
         <About />
         <Skills />
         <Footer />
+        {/* <Contacts /> */}
     </div>
 );
 

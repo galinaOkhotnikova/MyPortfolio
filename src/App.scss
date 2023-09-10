@@ -17,13 +17,21 @@
 .btn {
     font-family: var(--font-base);
     border-radius: 7px;
-    background: var(--buttom, linear-gradient(270deg, #743087 0%, #BF7DD0 100%));
+    background: var(--button, linear-gradient(270deg, #743087 0%, #BF7DD0 100%));
     color: var(--color-white);
     padding: 20px 40px;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     text-align: center;
+    transition: background ease-in 0.25s;
+
+    &:hover {
+        background: var(--button, linear-gradient(270deg, #9443aa 0%, #d598e5 100%));
+    }
+    &:active {
+        background: var(--button, linear-gradient(270deg, #5d2c6b 0%, #ad6abc 100%));
+    }
 }
 
 .divider {
