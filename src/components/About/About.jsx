@@ -16,11 +16,10 @@ const About = () => {
                 </div>
                 <div className="about__content-right">
                     <div className="about__content-right_text">
-                        I am working  mainly on Vue.js,  but I know the basics of React.js. 
-                        I have development experience in this area since 2022.
-                        <br /> <br />
-                        I am studying at the LETI University with a degree in 
-                        Applied Mathematics and Informatics (2020-2024).
+                        I have 1 year of development experience, being proficient in Vue.js and knowing the basics of React.js.
+                        <br/>
+                        I study at the Saint Petersburg Electrotechnical University 
+                        "LETI" for a bachelor's degree in Applied Mathematics and Computer Science (2020-2024).
                     </div>
                     <button className="about__content-right_btn btn">
                         Go to projects

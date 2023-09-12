@@ -2,8 +2,9 @@
     background: var(--gradient-background);
     font-family: var(--font-base);
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    height: 72vh;
+    height: 77vh;
 
     h2 {
         color: var(--color-accent-purple);
@@ -20,7 +21,7 @@
         font-style: normal;
         font-weight: 500;
         line-height: 40px;
-        margin: 40px 0;
+        margin: 3rem 0;
     }
 
     img {
@@ -32,7 +33,6 @@
         width: 40%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         &-button {
             display: flex;
             justify-content: center;
@@ -63,6 +63,7 @@
         }
         p {
             font-size: 24px;
+            margin: 3rem 2rem;
         }
 
         img {
