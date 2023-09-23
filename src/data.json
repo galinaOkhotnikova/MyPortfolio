@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Task list",
+        "img": "путь",
+        "stack": "Vue, Express, Graph.QL, Vuetify, Vuex, Apollo",
+        "link": "https://github.com/galinaOkhotnikova/To-do-App",
+        "description": "Task list application, where each task has subtasks. It consists of a page with a list of tasks and a task editing modal window: change the task or subtask name, delete or add subtasks, mark them as completed."
+    },
+    {
+        "id": 2,
+        "name": "Online cinema 'FlickFlair'",
+        "img": "путь",
+        "stack": "Vue, Vite, Sass, Pinia, Vue-router",
+        "link": "https://github.com/galinaOkhotnikova/movie",
+        "description": "The project implements an online cinema with the ability to filter the list of movies by date and title.It is possible to search&rate the movie and add it to favorites. Each movie also has a card with detailed information about it. "
+    },
+    {
+        "id": 3,
+        "name": "Library",
+        "img": "путь",
+        "stack": "JS, Express, Pug, Sass, AJAX",
+        "link": "https://github.com/galinaOkhotnikova/Library",
+        "description": "This project is online library. There is some information about: name, author, date of return, is book in stock or not. You can keep track of books, add new books, filter books and edit info about books."
+    },
+    {
+        "id": 4,
+        "name": "Tetris",
+        "img": "путь",
+        "stack": "JS, Pug, Express",
+        "link": "https://github.com/galinaOkhotnikova/tetris",
+        "description": "This is my first project in JavaScript that I wrote as a university laboratory work. It's just a well-known game of Tetris with an added player name input screen and a leaderboard table."
+    },
+    {
+        "id": 5,
+        "name": "Game",
+        "img": "путь",
+        "stack": "JS, Express, Node, Pug, Sass",
+        "link": "https://github.com/galinaOkhotnikova/game",
+        "description": "This project was created as a coursework. The project is a two-level game platformer with user ratings. The goal is to collect as many coins as possible and avoid enemies, including an intelligent one that moves towards the players within a certain radius."
+    }
+]
