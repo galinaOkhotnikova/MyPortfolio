@@ -2,11 +2,11 @@ import React from 'react';
 
 import './SmallCard.scss';
 
-const SmallCard = ({name, img}) => {
+const SmallCard = ({img, name}) => {
     return (
-        <div>
+        <div className='wrapper'>
             <div className='smallcard'>
-                <img className='smallcard__img' src={img} />
+                <div className="smallcard__image" style={{backgroundImage: `url(${img})`}}></div>
                 <span className="smallcard__mask">
                     <span className="smallcard__name">{ name }</span>
                 </span>

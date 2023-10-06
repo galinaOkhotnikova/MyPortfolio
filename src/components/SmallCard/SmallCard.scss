@@ -1,0 +1,89 @@
+.smallcard {
+    position: relative;
+    overflow: hidden;
+    font-family: var(--font-base);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    cursor: pointer;
+    
+    &__image {
+        width: 30rem;
+        height: 20rem;
+        background-size: cover;
+        background-position: center;
+        border-radius: 3%;
+    }
+
+    &__mask {
+        width: 30rem;
+        height: 20rem;
+        position: absolute;
+        border-radius: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .8);
+        opacity: 0;
+        color: #fff;
+        transition: opacity .4s linear;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.wrapper {
+    transition: transform 0.2s linear;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .smallcard {
+        &__image {
+            width: 28rem;
+            height: 18rem;
+        }
+        &__mask {
+            width: 28rem;
+            height: 18rem;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .smallcard {
+        &__image {
+            width: 24rem;
+            height: 14rem;
+        }
+
+        &__mask {
+            width: 24rem;
+            height: 14rem;
+        }
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .smallcard {
+        &__image {
+            width: 22rem;
+            height: 12rem;
+        }
+
+        &__mask {
+            width: 22rem;
+            height: 12rem;
+        }
+    }
+}
